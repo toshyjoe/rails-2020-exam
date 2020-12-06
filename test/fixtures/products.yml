@@ -1,0 +1,31 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+n95_mask:
+  title: N95 Mask
+  tags: mask
+  price: 3
+  promoted: false
+
+surgical_mask:
+  title: Surgical Mask
+  tags: mask
+  price: 1
+  promoted: false
+
+homemade_mask:
+  title: Homemade Mask
+  tags: mask
+  price: 5
+  promoted: true
+
+hydroalcoholic_gel:
+  title: Hydroalcoholic gel
+  tags: hand
+  price: 10
+  promoted: true
+
+soap:
+  title: Soap
+  tags: hand
+  price: 2
+  promoted: false
