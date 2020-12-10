@@ -23,7 +23,11 @@
 <%= link_to 'Edit', edit_product_path(@product) %> |
 <%= link_to 'Back', products_path %>
 
-<% unless @product.promoted %>
+<% if @product.promoted %>
+  <%= button_to(@product, method: :patch, remote: true, params: { product: { promoted: false } }) do %>
+    Demote!
+  <% end %>
+<% else %>
   <%= button_to(@product, method: :patch, remote: true, params: { product: { promoted: true } }) do %>
     Promote!
   <% end %>
